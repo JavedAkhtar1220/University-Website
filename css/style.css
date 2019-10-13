@@ -1,0 +1,238 @@
+* {
+    margin: 0% ;
+    padding: 0% ;
+    box-sizing: border-box ;
+    /* overflow-x: hidden ; */
+}
+html {
+    scroll-behavior: smooth ;
+}
+#loader {
+    width: 100% ;
+    height: 100%;
+    background : #fff 
+    url("../Images/Ellipsis-1s-200px.svg") no-repeat center ;
+    position: fixed ;
+    z-index: 99999;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url("../Images/cover.jpg") ;
+    background-position: 100% 100% ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
+}
+header {
+    width: 100% ;
+    height: 8vh;
+}
+li {
+    margin-left: 25px ;
+}
+.logo {
+    font-family: 'Flamenco', cursive;
+    font-weight: 800 ;
+    letter-spacing: 4px; 
+}
+
+/* Main section */
+.w-note {
+    text-transform: uppercase ;
+    font-weight: 700 ;
+    letter-spacing: 4px ;
+}
+.txt {
+    animation: mytxt 2s infinite ;
+}
+.info-links {
+    width: 100% ;
+    height: 92vh ;
+    border-radius: 10px ;
+    position: relative ;
+    background-color: rgba(244, 236, 247,0.8) ;
+}
+
+
+.link-txt h3{
+    font-weight : 900 ;
+    font-size: 20px ;
+    letter-spacing : 2px ;
+}
+
+.ads {
+    width: 100% ;
+    height: 4vh ;
+    background-color: #223634 ;
+}
+
+.contain-links {
+    width: 100% ;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-around ;
+    flex-flow: wrap ;
+
+}
+.place {
+    width: 30% ;
+    height: 200px ;
+    border: 1px solid  #f2f2f2 ;
+    box-sizing: border-box ;
+    border-radius: 10px ;
+    position: relative;
+}
+
+.d-link {
+    position: absolute ;
+    width: 100% ;
+    height: 10vh ;
+    background: #01818c;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+.d-link a {
+    margin-left: 20px ;
+    color: white ;
+    letter-spacing: 4px ;
+    font-size: 18px ;
+}
+.d-link h6 {
+    margin-left : 20px ;
+    color: rgb(223, 217, 217)  ;
+    letter-spacing: 2px;
+
+}
+.place-img img {
+    width: 331px ;
+    height: 154px ;
+    margin-top: 44px ;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+
+.teacher-pic {
+    width: 70px;
+    height: 70px ;
+    border-radius: 50% ;
+   position: absolute;
+   border: 1px solid black ;
+   top: 40%;
+   /* opacity: 0.8; */
+   left: 70% ;
+   /* margin-right: 20px ; */
+   cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #303036 ;
+    color: #fff ;
+    height: 470px ;
+    position: relative ;
+}
+
+.footer-heading {
+    width: 100%;
+    height: 100px;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+.footer-heading h1 {
+    font-family: 'Dancing Script', cursive; 
+    font-weight: 700 ;
+}
+
+.footer-content {
+    display: flex ;
+    /* flex-direction: column ; */
+    justify-content:  center;
+}
+.media {
+    width: 50px ;
+    height: 50px;
+    border-radius: 50% ;
+    background: #343a40 ;
+    margin-right: 15px ;
+    cursor: pointer ;
+    border: 1px solid #f2f2f2 ;
+    opacity: 0.8
+}
+.media:hover {
+    opacity: 1 ;
+    border: 1px solid #fff;
+}
+.media a {
+    margin: auto ;
+    color: white ;
+}
+.footer-bottom {
+    background: #343a40 ;
+    color: #f2f2f2 ;
+    width: 100% ;
+    height: 50px ;
+    text-align: center ;
+    position: absolute ;
+    bottom: 0px;
+    left: 0px; 
+    padding-top: 20px ;
+    font-family: 'Flamenco', cursive;
+}
+/* Footer */
+
+
+@keyframes mytxt {
+    0% {color: red}
+    25% {color: blue}
+    50% {color: yellow}
+    60% {color: gray}
+    80% {color: purple}
+    100% {color: rgb(73, 12, 12)}
+}
+
+@media screen and (max-width : 1200px) {
+    .place {
+        width: 30% ;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav2-link {
+        margin-top: 5px ;
+        margin-bottom: 5px ;
+        text-align: center ;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .contain-links {
+        margin-top: -2px !important ;
+    }
+    .info-links {
+        height: 215vh ;
+    }
+    .place {
+        width: 80% ;
+        margin-bottom: 10px ;
+    }
+    .place-img img {
+        width: 406px ;
+    }
+
+}
+
+@media screen and (max-width : 360px) {
+    
+    .w-note {
+        font-size: 14px ;
+    }
+    .link-txt h3{
+        font-weight : 900 ;
+        font-size: 16px ;
+        letter-spacing : 2px ;
+    }
+
+}
