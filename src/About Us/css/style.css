@@ -1,0 +1,66 @@
+* {
+    margin: 0% ;
+    padding: 0% ;
+    box-sizing: border-box ;
+    /* overflow-x: hidden ; */
+}
+#loader {
+    width: 100% ;
+    height: 100%;
+    background : #fff 
+    url("../../../Images/Ellipsis-1s-200px.svg") no-repeat center ;
+    position: fixed ;
+    z-index: 99999;
+}
+html {
+    scroll-behavior: smooth ;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url("../../../Images/About/cellular-telephone-communication-connection-682933.jpg") ;
+    background-position: 100% 100% ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
+}
+.main-portion {
+    width : 100% ;
+    height: 100vh ;
+}
+.about-content {
+    width: 100% ;
+    height: auto ;
+    background: #343a40 ;
+
+}
+.about-content p {
+    color: white;
+}
+
+.about-main {
+    display: flex ;
+    justify-content: space-around;
+}
+
+.mypic {
+    width: 300px ;
+    height: 300px;
+    border-radius: 20px ;
+    border: 1px solid #fff ;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .about-main {
+        flex-direction: column ;
+    }
+}
+
+@media screen and (max-width : 768px) {
+
+}
+
+@media screen and (max-width : 360px) {
+    
+
+}
