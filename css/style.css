@@ -13,7 +13,6 @@ html {
     url("../Images/Ellipsis-1s-200px.svg") no-repeat center ;
     position: fixed ;
     z-index: 99999;
-
 }
 body {
     font-family: 'Poppins', sans-serif;

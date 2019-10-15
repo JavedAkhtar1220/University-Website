@@ -1,0 +1,127 @@
+* {
+    padding: 0%;
+    margin: 0% ;
+    box-sizing: border-box;
+}
+#loader {
+    width: 100% ;
+    height: 100%;
+    background : #fff 
+    url("../../../Images/Ellipsis-1s-200px.svg") no-repeat center ;
+    position: fixed ;
+    z-index: 99999;
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../../../Images/S\ &\ L\ pics/81YlsUobrRL.jpg");
+    background-position: center ;
+    background-size: cover ;
+    background-attachment: fixed ;
+    background-repeat: no-repeat ;
+    height: 100vh;
+}
+.login {
+    width: 350px ;
+    height: 840px;
+    /* border: 1px solid #f2f2f2; */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../../../Images/login/Seljalandsfoss_Iceland_waterfall_4248x2817.jpg");
+    background-position: center;
+    background-size: 100% 100% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -30%);
+    box-shadow: 3px 3px 4px 3px #020202;
+}
+
+/* Notification Bar */
+.notification-bar {
+    position: absolute;
+    width: 100% ;
+    height: auto ;
+    display: flex ;
+    justify-content: space-between ;
+}
+.notification-bar div ul {
+    list-style: none ;
+    display: flex ;
+}
+.notification-bar div ul li {
+    margin-right: 6px ;
+    color: white ;
+    font-size: 14px ;
+}
+#clock {
+    color: white ;
+    font-size: 14px ;
+    font-weight: bold ;
+}
+/* Notification */
+
+/* Body  */
+.body-portion {
+    margin-top: 80px ;
+}
+.body-portion h3 {
+    font-family: 'Hepta Slab', serif;
+    font-weight: 800 ;
+    letter-spacing: 4px ;
+}
+.body-portion h3::after {
+    content: "";
+    width: 110px ;
+    height: 3px ;
+    margin-left: 95px ;
+    display: block;
+    background-color:#ffa500 ;
+}
+label {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+input {
+    background: transparent !important;
+    color: white !important;
+    font-family: 'Raleway', sans-serif !important ;
+}
+::placeholder {
+    color: white !important;
+    opacity: 0.8 !important;
+    letter-spacing: 2px ;
+    font-size: 12px !important;
+}
+.icon {
+    color: #f2f2f2 ;
+    position: absolute ;
+    top: 61%;
+    right: 5% ;
+    font-size: 18px ;
+    cursor: pointer ;
+}
+.media {
+    width: 50px ;
+    height: 50px;
+    border-radius: 50% ;
+    background:  #0089ff;
+    margin-right: 15px ;
+    cursor: pointer ;
+    border: 1px solid #f2f2f2 ;
+    opacity: 0.8
+}
+.media:hover {
+    opacity: 1 ;
+    border: 1px solid #fff;
+}
+.media a {
+    margin: auto ;
+    color: white ;
+}
+.error {
+    color: red ;
+    font-size: 15px ;
+    background-color: #f2f2f2 ;
+    margin-top: -15px ;
+    text-align: center;
+    border-radius: 10px ;
+    font-family: 'Raleway', sans-serif !important ;
+    font-weight: 700;
+}
