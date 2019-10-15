@@ -25,7 +25,7 @@ section {
 }
 .section-content {
     width: 100% ;
-    height: 100px ;
+    height: 120px ;
     border : 1px solid #dddddd ;
     background: #cccccc ;
     border-radius: 20px ;
@@ -63,4 +63,27 @@ section {
 }
 #result {
     text-align: center;
+}
+
+#clearing {
+    position: absolute;
+    top: 10px ;
+    left: 78% ;
+    z-index: 9999999;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 485px ) {
+    #clearing {
+        left: 75% ;
+    }
+}
+
+@media screen and (max-width : 430px ) {
+    #clearing {
+        left: 70% ;
+    }
+    ::placeholder {
+        font-size: 14px;
+    }
 }

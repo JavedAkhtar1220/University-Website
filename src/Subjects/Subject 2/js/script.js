@@ -3,9 +3,15 @@ document.querySelector(".close").addEventListener('click',
     function () {
         document.querySelector(".bg-modal").style.display = "none";
         document.querySelector("#checkingword").value = "";
-        document.querySelector("#result").innerHTML = " ";
+        document.querySelector("#result").innerHTML = "";
     });
 // Closing 
+
+function clearFun() {
+    document.querySelector("#checkingword").value = ""; 
+    document.querySelector("#result").innerHTML = "";
+
+}
 
 // Palindrome Function 
 
