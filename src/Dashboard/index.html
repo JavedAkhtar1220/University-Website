@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FUUAST BADGE 16 | 2019</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="../Header and Footer CSS/style.css">
+    <!-- Google Font CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myFun()">
+    <!-- Page Loader -->
+    <div id="loader">
+
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo animated bounceInRight" href="#">GB TECH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="ml-auto navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About Us/about.html"><i class="fas fa-address-card"></i> About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i>
+                                Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-center">
+                <h3 class="mt-5 text-center text-light w-note col-12 col-sm-12 mb-3">Welcome <span  id='displayName'></span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="info-links">
+            <!-- <div class=" text-danger ads">
+                        <marquee direction="left"><img src="Images/output.svg" alt="New"> Sarfaranga Cold Desert Race should be held on <span class="text-light">19/03/2020 <a href="https://www.google.com" target="_blank">For detail...</a></span> <img src="Images/output.svg" alt="New"></marquee>
+                    </div> -->
+            <br>
+            <div class="link-txt text-center">
+                <h3>Below are the links of Second Semester Subjects</h3>
+            </div>
+            <div class="mt-5 mb-5 contain-links">
+                <div class="place">
+                    <div class="d-link">
+                        <a href="../Subjects/Subject 1/index.html"><abbr title="Probability Statistics">P.S</abbr></a>
+                        <h6>Sir Abid</h6>
+                        <div>
+                            <img src="../../Images/256x256bb.jpg" alt="" class="teacher-pic">
+                        </div>
+                    </div>
+                    <div class="place-img">
+                        <img src="../../Images/81YlsUobrRL.jpg" class="img-fluid" alt="Probability Statistics">
+                    </div>
+                </div>
+                <div class="place">
+                    <div class="d-link">
+                        <a href="../Subjects/Subject 2/index.html"><abbr title="Object Oriented Programming">OOP</abbr>
+                        </a>
+                        <h6>Sir Tauseef</h6>
+                        <div>
+                            <img src="../../Images/256x256bb.jpg" alt="" class="teacher-pic">
+                        </div>
+                    </div>
+                    <div class="place-img">
+                        <img src="../../Images/object-oriented-programming-using-c-sharp.jpg" class="img-fluid"
+                            alt="Object Oriented Programming">
+                    </div>
+                </div>
+                <div class="place">
+                    <div class="d-link">
+                        <a href="../Subjects/Subject 3/index.html"><abbr
+                                title="Technical Business Writing">TBW</abbr></a>
+                        <h6>Sir Sohail Ahmed</h6>
+                        <div>
+                            <img src="../../Images/256x256bb.jpg" alt="" class="teacher-pic">
+                        </div>
+                    </div>
+                    <div class="place-img">
+                        <img src="../../Images/71OSgR5c2uL.jpg" class="img-fluid" alt="Business Communication">
+                    </div>
+                </div>
+                <div class="mt-3 contain-links">
+                    <div class="place">
+                        <div class="d-link">
+                            <a href="../Subjects/Subject 4/index.html"><abbr title="Pakistan Studies">P.ST</abbr></a>
+                            <h6>Miss Zamarood Banoo</h6>
+                            <div>
+                                <img src="../../Images/256x256bb.jpg" alt="" class="teacher-pic">
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="../../Images/Pakistan-Studies-By-Gul-Shahzad-Sarwar-Rehbar-Publishers.jpeg"
+                                class="img-fluid" alt="Pakistan Studies">
+                        </div>
+                    </div>
+                    <div class="place">
+                        <div class="d-link">
+                            <a href="../Subjects/Subject 5/index.html"><abbr title="Digital Logic Design">DLD</abbr></a>
+                            <h6>Sir Rayees</h6>
+                            <div>
+                                <img src="../../Images/256x256bb.jpg" alt="" class="teacher-pic">
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="../../Images/maxresdefault.jpg" class="img-fluid" alt="Digital Logic Design">
+                        </div>
+                    </div>
+                    <div class="place">
+                        <div class="d-link">
+                            <a href="../Subjects/Subject 6/index.html"><abbr title="Discrete Structure">D.S</abbr></a>
+                            <h6>Sir Amir Mehmood</h6>
+                            <div>
+                                <img src="../../Images/256x256bb.jpg" alt="" class="teacher-pic">
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="../../Images/716hbj45eOL.jpg" class="img-fluid" alt="Discrete Structure">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <div class="footer">
+        <br>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="background: white; width: 60px;">
+            <p>
+                <i class="fas fa-home mr-3"></i> Manzoor Colony , Karachi
+            </p>
+            <p>
+                <i class="fas fa-envelope mr-3"></i> j.akhtar1220@gmail.com
+            </p>
+            <p>
+                <i class="fas fa-phone mr-3"></i> +92 341 2531220
+            </p>
+            <p>
+                <i class="fas fa-phone mr-3"></i> +92 313 0100887
+            </p>
+        </div>
+        <div class="footer-heading">
+            <h1>Follow us on</h1>
+        </div>
+        <div class="footer-content">
+            <div class="media">
+                <a href="https://www.facebook.com/profile.php?id=100007397497285" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="media">
+                <a href="https://www.instagram.com/7aved_akhtar" target="_blank"> <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="media">
+                <a href="https://twitter.com/JavedAk76055534" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="media">
+                <a href="https://github.com/JavedAkhtar1220" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="media">
+                <a href="https://www.youtube.com/channel/UCCX5dH2QQzv0hd_Mrso5o9Q?view_as=subscriber" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Copyright 2019 | gbtech.com | Designed by Javed Akhtar
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAe7ng0MmXkDW38pSICDT7cX9jYEghoAEA",
+            authDomain: "university-site-54604.firebaseapp.com",
+            databaseURL: "https://university-site-54604.firebaseio.com",
+            projectId: "university-site-54604",
+            storageBucket: "university-site-54604.appspot.com",
+            messagingSenderId: "294947643251",
+            appId: "1:294947643251:web:4f9dc2c3d0458e2077ef06",
+            measurementId: "G-5P43RN8H2Q"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- Custom javaScript link -->
+    <script src="js/script.js"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/3bef63a951.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        var loader = document.querySelector("#loader");
+        function myFun() {
+            loader.style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>

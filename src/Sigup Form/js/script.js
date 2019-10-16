@@ -19,3 +19,54 @@ function digitalClock() {
 }
 setInterval(digitalClock , 1000);
 
+const db = firebase.firestore();
+
+firebase.auth().onAuthStateChanged(user => {
+    console.log('user :', user);
+});
+
+let signup = e => {
+    const username = document.querySelector("#username").value;
+    const mobileNumber= document.querySelector("#mobileNumber").value;
+    const email = document.querySelector("#email").value;
+    const password = document.querySelector("#password").value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then(data => {
+        return db.collection('users').doc(data.user.uid).set({
+            uid:  data.user.uid ,
+            username,
+            mobileNumber,
+            email,
+        })
+        .then(() =>{
+            swal("Good job!", "Your account has been created successfully!", "success")
+            .then(() => {
+                window.location = "../Login\ Form/login.html";
+            });
+        });
+    })
+    .catch(function(error) {
+        var errorCode = error.code; 
+        var errorMessage = error.message ;
+        // console.log("error : ", errorMessage);
+        swal("Error!",errorMessage,"error");
+    })
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

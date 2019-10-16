@@ -36,14 +36,15 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="ml-auto navbar-nav mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../../../index.html""><i class=" fas fa-home"></i> Home</a>
+                            <a class="nav-link" href="../../Dashboard/index.html"><i class=" fas fa-home"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../../About Us/about.html"><i class="fas fa-address-card"></i>
                                 About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                            <a class="nav-link" href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i>
+                                Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -53,12 +54,12 @@
 
     <!-- Section -->
     <section>
-        <div class="container mt-5 col-md-4 col-lg-3 col-xl-6 mx-auto mb-md-0 mb-4">
+        <div class="container mt-5 col-md-8 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4">
             <h3 class="text-white font-weight-bold" style="letter-spacing: 2px;">Object Oriented Programing</h3>
             <hr class="deep-purple accent-2 mb-4 mt-0 text-center d-inline-block mx-auto"
-                style="background: white; width: 200px;">
+                style="background: rgb(236, 15, 15); width: 200px; height: 3px;">
         </div>
-        <div class="container section-content mb-5">
+        <div class="container section-content-row mb-5">
             <div class="container section-content-heading">
                 <h1>OOP PDF BOOK</h1>
                 <div>
@@ -92,12 +93,13 @@
                 </div>
                 <div class="container form-group mt-3">
                     <div class="input-group mb-3">
-                            <i class="fas fa-times-circle" onclick="clearFun()" id="clearing"></i>
-                            <input type="text" class="form-control" id="checkingword" placeholder="Enter Any Words or Numbers.....">
-                            <div class="input-group-append">
+                        <i class="fas fa-times-circle" onclick="clearFun()" id="clearing"></i>
+                        <input type="text" class="form-control" id="checkingword"
+                            placeholder="Enter Any Words or Numbers.....">
+                        <div class="input-group-append">
                             <button class="btn btn-success" type="submit" id="output">Check</button>
-                            </div>
                         </div>
+                    </div>
                 </div>
                 <div id="result">
 
@@ -115,7 +117,7 @@
     <!-- Footer -->
     <div class="footer">
         <br>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="contact">
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Contact</h6>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="background: white; width: 60px;">
@@ -167,9 +169,14 @@
     </div>
     <!-- Footer -->
 
-
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+   
     <!-- Custom javaScript link -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="../../Firebase SDK/firebase.js"></script>
     <!-- Sweet ALert  JS CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Font Awesome CDN -->

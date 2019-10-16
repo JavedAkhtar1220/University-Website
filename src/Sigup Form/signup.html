@@ -69,13 +69,15 @@
                     <div class="form-group" style="position: relative;">
                         <label for="mobileNumber" class="text-white"><strong>Mobile Number :</strong></label>
                         <i class="fas fa-phone icon"></i>
-                        <input type="number" id="mobileNumber" placeholder="Enter your mobile number" class="form-control">
+                        <input type="number" id="mobileNumber" placeholder="Enter your mobile number"
+                            class="form-control">
                     </div>
                     <div id="e-mobileNumber" class="error"></div>
                     <div class="form-group" style="position: relative;">
                         <label for="email" class="text-white"><strong>Email :</strong></label>
-                        <i class="fas fa-envelope icon" ></i>
-                        <input type="email" id="email" placeholder="Enter your Email" class="form-control" autocomplete="off">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="email" id="email" placeholder="Enter your Email" class="form-control"
+                            autocomplete="off">
                     </div>
                     <div id="e-email" class="error"></div>
                     <div class="form-group" style="position: relative;">
@@ -90,33 +92,46 @@
                         <input type="password" id="confirmPassword" placeholder="Retype Password" class="form-control">
                     </div>
                     <div id="e-confirmPassword" class="error"></div>
-                    <button type="submit" class="btn btn-primary form-control">Submit</button>
+                    <button type="submit" class="btn btn-primary form-control" onclick="signup()">Submit</button>
                 </form>
             </div>
             <div class="container mt-3 d-flex justify-content-end">
                 <p class="text-white">Already have an account ? <a href="../Login Form/login.html">Sign in</a></p>
             </div>
-            <div class="container mt-4">
-                <p class="font-weight-bold text-white text-center" style="font-family: 'Hepta Slab', serif; letter-spacing: 2px ;">
-                    Or Signup Using
-                </p>
-            </div>
-            <div class="d-flex justify-content-center ">
-                <div class="media">
-                    <a href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </div>
-                <div class="media" style="background:red;">
-                    <a href="#">
-                        <i class="fab fa-google"></i>
-                    </a>
-                </div>
-            </div>
-            
         </div>
     </div>
 
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAe7ng0MmXkDW38pSICDT7cX9jYEghoAEA",
+            authDomain: "university-site-54604.firebaseapp.com",
+            databaseURL: "https://university-site-54604.firebaseio.com",
+            projectId: "university-site-54604",
+            storageBucket: "university-site-54604.appspot.com",
+            messagingSenderId: "294947643251",
+            appId: "1:294947643251:web:4f9dc2c3d0458e2077ef06",
+            measurementId: "G-5P43RN8H2Q"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <!-- Sweet ALert  JS CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->

@@ -10,13 +10,13 @@ html {
     width: 100% ;
     height: 100%;
     background : #fff 
-    url("../Images/Ellipsis-1s-200px.svg") no-repeat center ;
+    url("../../../Images/Ellipsis-1s-200px.svg") no-repeat center ;
     position: fixed ;
     z-index: 99999;
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url("../Images/cover.jpg") ;
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url("../../../Images/cover.jpg") ;
     background-position: 100% 100% ;
     background-size: cover ;
     background-repeat: no-repeat ;
@@ -28,9 +28,7 @@ body {
     font-weight: 700 ;
     letter-spacing: 4px ;
 }
-.txt {
-    animation: mytxt 2s infinite ;
-}
+
 .info-links {
     width: 100% ;
     height: 92vh ;
@@ -46,11 +44,11 @@ body {
     letter-spacing : 2px ;
 }
 
-.ads {
+/* .ads {
     width: 100% ;
     height: 4vh ;
     background-color: #223634 ;
-}
+} */
 
 .contain-links {
     width: 100% ;
@@ -108,15 +106,6 @@ body {
    left: 70% ;
    /* margin-right: 20px ; */
    cursor: pointer;
-}
-
-@keyframes mytxt {
-    0% {color: red}
-    25% {color: blue}
-    50% {color: yellow}
-    60% {color: gray}
-    80% {color: purple}
-    100% {color: rgb(73, 12, 12)}
 }
 
 @media screen and (max-width : 1200px) {

@@ -87,7 +87,16 @@ $(document).ready(function() {
         
         if (mobileNumber_val.charAt(0) != 0) {
             $("#e-mobileNumber").show();
-            $("#e-mobileNumber").html("**Mobile Number must start with 0");
+            $("#e-mobileNumber").html("**Mobile Number must start with 03");
+            $("#e-mobileNumber").focus();
+            mobileNumber_err = false ;
+            return false ;
+        }else {
+            $("#e-mobileNumber").hide();
+        }
+        if (mobileNumber_val.charAt(1) != 3) {
+            $("#e-mobileNumber").show();
+            $("#e-mobileNumber").html("**Mobile Number must start with 03");
             $("#e-mobileNumber").focus();
             mobileNumber_err = false ;
             return false ;
@@ -179,7 +188,7 @@ $(document).ready(function() {
             var password_val = $("#password").val();
             if (confirmPassword_val != password_val) {
                 $("#e-confirmPassword").show();
-                $("#e-confirmPassword").html("**Passwor not match");
+                $("#e-confirmPassword").html("**Password not match");
                 $("#e-confirmPassword").focus();
                 confirmPassword_err = false ;
                 return false ;
@@ -200,7 +209,7 @@ $(document).ready(function() {
         mobileNumber_check();
         email_check();
         password_check();
-        confirmPassword_check();
+        // confirmPassword_check() ;
         if ((username_err == true) && (mobileNumber_err == true) && (email_err == true) && (password_err == true) && (confirmPassword_err == true)) {
             return true ;
         }else {

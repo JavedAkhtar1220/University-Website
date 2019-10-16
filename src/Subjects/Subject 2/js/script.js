@@ -53,24 +53,28 @@ document.getElementById("evenOdd").addEventListener('click',
         document.querySelector(".bg-modal").style.display = "flex";
         document.querySelector("#p-heading").innerHTML = "Even or Odd Program";
         document.querySelector("#popup-heading").innerHTML = "Check whether it is Even or Odd number";
-        var wordtype = document.querySelector("#checkingword");
-        wordtype.type = "number";
         document.getElementById("output").onclick = function() {evenOddFun()};
     });
     function evenOddFun() {
         var word = document.querySelector("#checkingword").value;
+        var pattern = /^[0-9]+$/;
         
         if (word == "") {
             document.getElementById("result").innerHTML = "**Please fill out  input field first";
             document.getElementById("result").style.color = "red";
             return false;
         }
-        
+        else if (!pattern.test(word)) {
+            document.getElementById("result").innerHTML = "**Please Enter number only";
+            document.getElementById("result").style.color = "red";
+            return false;
+        }
+                
         if (word%2 == 0){
-            document.getElementById("result").innerHTML = "Enter number is Even Number ";
+            document.getElementById("result").innerHTML = "Even Number ";
             document.getElementById("result").style.color = "blue";
         }else {
-            document.getElementById("result").innerHTML = "Enter Number is Odd Number ";
+            document.getElementById("result").innerHTML = "Odd Number ";
             document.getElementById("result").style.color = "blue";
         }
     };
