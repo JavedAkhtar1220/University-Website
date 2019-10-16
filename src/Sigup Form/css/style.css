@@ -125,3 +125,11 @@ input {
     font-family: 'Raleway', sans-serif !important ;
     font-weight: 700;
 }
+
+@media screen and (max-width : 500px) {
+    .login {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -35%);
+    }
+}
