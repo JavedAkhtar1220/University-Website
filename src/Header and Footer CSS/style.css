@@ -10,6 +10,24 @@ li {
     font-weight: 800 ;
     letter-spacing: 4px; 
 }
+.dropdown-toggle {
+    background: transparent ;
+    border: none ;
+    margin-top: -6px ;
+    opacity: 0.7;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 400 ;
+}
+.dropdown-toggle:hover {
+    background: transparent ;
+    opacity: 1;
+}
+.dropdown-toggle:focus {
+    background: transparent !important;
+    border: transparent !important;
+}
 
 .footer {
     background: #303036 ;
@@ -66,3 +84,9 @@ li {
     font-family: 'Flamenco', cursive;
 }
 /* Footer */
+
+@media screen and (max-width : 991px) {
+    .dropdown-toggle {
+        margin-left: -12px;
+    }
+}

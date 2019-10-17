@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>FUUAST BADGE 16 | P.ST | 2019</title>
+    <title>FUUAST BADGE 16 | Time Table |</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,6 +19,7 @@
 </head>
 
 <body onload="myFun()">
+
     <!-- Page Loader -->
     <div id="loader">
 
@@ -34,23 +35,23 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="ml-auto navbar-nav mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../Dashboard/index.html"><i class=" fas fa-home"></i> Home</a>
+                            <a class="nav-link" href="../../Dashboard/index.html"><i class="fas fa-home"></i> Home</a>
                         </li>
-                        <li class="nav-link">
+                        <li class="nav-item active">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-calendar-alt"> Class Schedule</i>
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="../../Time Table/Section A/index.html">Section A</a>
-
+                                    <a class="dropdown-item" href="index.html">Section A</a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../About Us/about.html""><i class=" fas fa-address-card"></i>
-                                About Us</a>
+                            <a class="nav-link" href="../../About Us/about.html"><i class="fas fa-address-card"></i>
+                                About
+                                Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i>
@@ -62,26 +63,109 @@
         </nav>
     </header>
 
-
-    <!-- Section -->
     <section>
-        <div class="container mt-5 col-md-6 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4">
-            <h3 class="text-white font-weight-bold" style="letter-spacing: 2px;">Pakistan Studies</h3>
+        <div class="container mt-5 col-10 col-md-8 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-5">
+            <h3 class="text-white font-weight-bold" style="letter-spacing: 2px;">Time Table BSCS 2 A Evening</h3>
             <hr class="deep-purple accent-2 mb-4 mt-0 text-center d-inline-block mx-auto"
                 style="background: rgb(236, 15, 15); width: 200px; height: 3px;">
+        </div>
+        <div class="container table-responsive-sm mb-5">
+            <table class="table table-bordered table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Class</th>
+                        <th>5:00 to 5:50</th>
+                        <th>5:50 to 6:40</th>
+                        <th>6:40 to 7:30</th>
+                        <th>7:30 to 8:20</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>BSCS 2 A</td>
+                        <td>Pakistan Studies<br>
+                            <kbd>Ms. Zamarood Banoo</kbd>
+                        </td>
+                        <td>Object Oriented Pragram<br>
+                            <kbd>Mr Tauseef</kbd>
+                        </td>
+                        <td>Probability Statistics<br>
+                            <kbd>Mr Abid Khan</kbd>
+                        </td>
+                        <td>OFF</td>
 
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>BSCS 2 A</td>
+                        <td>OFF</td> 
+                        <td>Pakistan Studies<br>
+                            <kbd>Ms. Zamarood Banoo</kbd>
+                        </td>
+                        <td>Probability Statistics<br>
+                            <kbd>Mr Abid Khan</kbd>
+                        </td>
+                        <td>TBW<br>
+                            <kbd>Mr Sohail Ahmed</kbd>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>BSCS 2 A</td>
+                        <td>Probability Statistics<br>
+                            <kbd>Mr Abid Khan</kbd>
+                        </td>
+                        <td>Pakistan Studies<br>
+                            <kbd>Ms. Zamarood Banoo</kbd>
+                        </td>
+                        <td>Object Oriented Pragram<br>
+                            <kbd>Mr Tauseef</kbd>
+                        </td>
+                        <td>Object Oriented Pragram<br>
+                            <kbd>Mr Tauseef</kbd>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>BSCS 2 A</td>
+                        <td>Discrete Structures<br>
+                            <kbd>Ms. Muhammad Amir</kbd>
+                        </td>
+                        <td>Discrete Structures<br>
+                            <kbd>Ms. Muhammad Amir</kbd>
+                        </td>
+                        <td>Digital Login Design<br>
+                            <kbd>Mr Rayees</kbd>
+                        </td>
+                        <td>TBW<br>
+                            <kbd>Mr Sohail Ahmed</kbd>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>BSCS 2 A</td>
+                        <td>Discrete Structures<br>
+                            <kbd>Ms. Muhammad Amir</kbd>
+                        </td>
+                        <td>TBW<br>
+                            <kbd>Mr Sohail Ahmed</kbd>
+                        </td>
+                        <td>Digital Login Design<br>
+                            <kbd>Mr Rayees</kbd>
+                        </td>
+                        <td>Digital Login Design<br>
+                            <kbd>Mr Rayees</kbd>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="container section-content mb-5">
-            <div class="container section-content-heading">
-                <h1>P.ST PDF BOOK</h1>
-                <div>
-                    <a href="#" onclick="alertFun()"><i class="fas fa-hand-point-right"></i> Click here</a>
-                </div>
-            </div>
-        </div>
+
     </section>
 
-    <!-- Section -->
+
 
     <!-- Footer -->
     <div class="footer">
@@ -138,16 +222,12 @@
     </div>
     <!-- Footer -->
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
 
-    <!-- Custom javaScript link -->
-    <script src="js/script.js"></script>
     <script src="../../Firebase SDK/firebase.js"></script>
-    <!-- Sweet ALert  JS CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/3bef63a951.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS CDN -->
