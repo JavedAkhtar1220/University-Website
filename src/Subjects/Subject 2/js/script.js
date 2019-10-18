@@ -2,8 +2,7 @@
 document.querySelector(".close").addEventListener('click',
     function () {
         document.querySelector(".bg-modal").style.display = "none";
-        document.querySelector("#checkingword").value = "";
-        document.querySelector("#result").innerHTML = "";
+        document.querySelector("#email").value = "";
     });
 // Closing 
 
