@@ -31,6 +31,13 @@ section {
     background: #cccccc ;
     border-radius: 20px ;
 }
+.section-content-with-video {
+    width: 100% ;
+    height: 80vh ;
+    border : 1px solid #dddddd ;
+    background: #cccccc ;
+    border-radius: 20px ;
+}
 .section-content-heading h1 {
     font-size: 20px ;
     margin-top: 10px ;
@@ -41,3 +48,8 @@ section {
 .book-link {
     padding-right : 15px ;
 } 
+iframe {
+    border: 3px dotted black ;
+    width: 80%;
+    height: 400px;
+}

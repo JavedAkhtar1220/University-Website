@@ -33,29 +33,13 @@ body {
     box-shadow: 3px 3px 4px 3px #020202;
 }
 
-/* Notification Bar */
-.notification-bar {
-    position: absolute;
-    width: 100% ;
-    height: auto ;
-    display: flex ;
-    justify-content: space-between ;
-}
-.notification-bar div ul {
-    list-style: none ;
-    display: flex ;
-}
-.notification-bar div ul li {
-    margin-right: 6px ;
-    color: white ;
-    font-size: 14px ;
-}
+
 #clock {
     color: white ;
     font-size: 14px ;
     font-weight: bold ;
-}
-/* Notification */
+    text-align: center;
+} 
 
 /* Body  */
 .body-portion {
